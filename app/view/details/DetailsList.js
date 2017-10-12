@@ -40,13 +40,15 @@ Ext.define('HM.view.details.DetailsList', {
 		{
 			xtype: 'templatecolumn',
 			text: 'Цена',
-			tpl: Ext.create('Ext.XTemplate', '{price:formatPrice}', {
+			tpl: Ext.create('Ext.XTemplate', '{[ this.formatPrice(values.price) ]}', {
 				formatPrice: function(v)
 				{
 					if( v !== '' )
 					{
 						return v+' руб.';
 					}
+
+					return v;
 				}
 			}),
 			dataIndex: 'price'

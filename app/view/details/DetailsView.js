@@ -7,6 +7,7 @@ Ext.define('HM.view.details.DetailsView', {
 		'HM.view.details.DetailsController',
 		'HM.view.details.DetailsViewModel',
 		'HM.view.details.DetailsList',
+		'Ext.form.Panel'
 	],
 	controller: 'details',
 	viewModel: {
@@ -18,7 +19,7 @@ Ext.define('HM.view.details.DetailsView', {
 			region: 'center',
 			header: {
 				layout: {
-					type: 'fit',
+					type: 'fit'
 		        },
 		        title: {
 		        	hidden: true
@@ -68,7 +69,7 @@ Ext.define('HM.view.details.DetailsView', {
 			items: [
 				{
 					xtype: 'detailslist',
-					title: 'Наличие запчастей',
+					title: 'Наличие запчастей'
 				}
 			]
 		},
@@ -76,10 +77,7 @@ Ext.define('HM.view.details.DetailsView', {
 			xtype: 'panel',
 			region: 'east',
 			width: '25%',
-			title: 'Информация',
-			split: true,
-			collapsible: true,
-			collapsed: true
+			title: 'Информация'
 		}
 	]
 });

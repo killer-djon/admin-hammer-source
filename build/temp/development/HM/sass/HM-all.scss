@@ -1,6 +1,6 @@
 $app-name:  dynamic( 'HM' );
-$image-search-path: '/Users/djon/Sites/hammerschmidt.ru/admin_portal/build/development/HM/resources';
-$theme-name:  dynamic( 'hammer-theme' );
+$image-search-path: '/Users/eleshanu/Sites/admin-hammer-source/build/development/HM/resources';
+$theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
 $include-ext-abstractmanager: dynamic(true);;
@@ -1098,6 +1098,7 @@ $include-ext-ux-grid-subtable: dynamic(true);;
 $include-ext-ux-grid-transformgrid: dynamic(true);;
 $include-ext-ux-layout-center: dynamic(true);;
 $include-ext-ux-layout-responsivecolumn: dynamic(true);;
+$include-ext-ux-panel-uploadpanel: dynamic(true);;
 $include-ext-ux-rating-picker: dynamic(true);;
 $include-ext-ux-statusbar-statusbar: dynamic(true);;
 $include-ext-ux-statusbar-validationstatus: dynamic(true);;
@@ -1123,6 +1124,9 @@ $include-hm-model-details-detailslistmodel: dynamic(true);;
 $include-hm-model-users-usersmodel: dynamic(true);;
 $include-hm-store-details-detailsliststore: dynamic(true);;
 $include-hm-store-users-usersstore: dynamic(true);;
+$include-hm-view-catalogs-catalogview: dynamic(true);;
+$include-hm-view-catalogs-catalogviewcontroller: dynamic(true);;
+$include-hm-view-catalogs-catalogviewmodel: dynamic(true);;
 $include-hm-view-details-detailscontroller: dynamic(true);;
 $include-hm-view-details-detailslist: dynamic(true);;
 $include-hm-view-details-detailsview: dynamic(true);;
@@ -1204,14 +1208,6 @@ $current-package: 'theme-triton';
 $current-resource-root: $theme-triton-resource-root;
 $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/etc/all';
-
-/* including package hammer-theme */
-$hammer-theme-resource-root: '' !default;
-$hammer-theme-resource-path: 'images' !default;
-$current-package: 'hammer-theme';
-$current-resource-root: $hammer-theme-resource-root;
-$relative-image-path-for-uis: $hammer-theme-resource-path;
-@import '../../../../../packages/local/hammer-theme/sass/etc/all';
 
 /* including package charts */
 $charts-resource-root: 'charts' !default;

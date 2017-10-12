@@ -1,2 +1,2 @@
 // @tag full-page
-// @require /Users/djon/Sites/hammerschmidt.ru/admin_portal/app.js
+// @require /Users/eleshanu/Sites/admin-hammer-source/app.js

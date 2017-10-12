@@ -49,22 +49,25 @@ Ext.define('HM.view.catalogs.CatalogView', {
 								glyph: 0xf019,
 								bind: {
 									disabled: '{!catalogFilesList.selection.leaf}'
-								}
+								},
+								action: 'downloadSelectedFile'
 							},
 							'-',
 							{
 								text: 'Обновить список',
 								glyph: 0xf021,
-								action: 'refreshList'
+								action: 'refreshFilesList'
 							},
 							'-',
 							{
 								text: 'Удалить выбранные',
-								glyph: 0xf00d
+								glyph: 0xf00d,
+								action: 'removeSelected'
 							},
 							{
 								text: 'Очистить список',
-								glyph: 0xf12d
+								glyph: 0xf12d,
+								action: 'clearFilesList'
 							}
 						]
 					}

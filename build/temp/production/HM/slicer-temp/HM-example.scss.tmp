@@ -1,5 +1,5 @@
 $app-name:  dynamic( 'HM' );
-$image-search-path: '/Users/djon/Sites/hammerschmidt.ru/admin_portal/build/production/HM/resources';
+$image-search-path: '/Users/eleshanu/Sites/admin-hammer-source/build/production/HM/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
